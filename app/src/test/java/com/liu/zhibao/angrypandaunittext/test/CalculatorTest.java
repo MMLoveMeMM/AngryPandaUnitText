@@ -14,6 +14,9 @@ import static org.junit.Assert.*;
  * @see{@link}
  */
 public class CalculatorTest {
+    @Test
+    public void multi() throws Exception {
+    }
 
     private Calculator mCalculator;
 

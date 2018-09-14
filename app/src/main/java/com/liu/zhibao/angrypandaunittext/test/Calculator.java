@@ -27,4 +27,8 @@ public class Calculator {
         return 0;
     }
 
+    public int multi(int a,int b){
+        return 0;
+    }
+
 }
