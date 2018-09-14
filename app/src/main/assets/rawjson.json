@@ -1,0 +1,37 @@
+{
+  "method":"dr_report_dev_status",
+  "timestamp":1519873849,
+  "result":{
+    "status_modified_at":1519873849327,
+    "family_id":4040,
+    "device_id":264975517376686,
+    "device_name":"苏宁空气净化器01",
+    "default_device_name":"苏宁智能空气净化器",
+    "device_category_id":18,
+    "device_uuid":"00092bb2100100000000f0fe6b9660ae",
+    "updated_at":1519873849,
+    "attribute":{
+      "speed":"middle",
+      "child_lock_switch_status":"off",
+      "control_status":"manual",
+      "filter_time_used":3977,
+      "temperature":22,
+      "negative_ion_switch_status":"off",
+      "humidity":60,
+      "switch_status":"on",
+      "air_filter_result":{
+        "PM25":[
+          9
+        ],
+        "air_quality":[
+          "execllent"
+        ]
+      },
+      "deviceModel":"WA-7501FK",
+      "manufactureId":"Whirlpool",
+      "deviceCategory":"air_filter.sn",
+      "deviceSubCategory":0,
+      "connectivity":"online"
+    }
+  }
+}
