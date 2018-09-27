@@ -42,10 +42,11 @@ public class MockitoUsingTest {
         person.setName("kitty");
         person.setOld(13);
         when(mPerson.getName()).thenReturn("zhibaoliu");
-        when(mPerson.getOld()).thenThrow(new NullPointerException("无法判断性别"));
+        // when(mPerson.getOld()).thenThrow(new NullPointerException("无法获取年纪"));
+        when(mPerson.getOld()).thenReturn(12);
 
         assertEquals("zhibaoliu",mPerson.getName());
-        assertEquals(11,mPerson.getOld());
+        assertEquals(12,mPerson.getOld());
     }
 
 }

@@ -36,14 +36,14 @@ public class AnlayStringTest {
     @Test
     public void equalStr() throws Exception {
         // assertFalse(anlayString.equalStr("helloa")); // 不相等,false,即设置的条件是成立的
-        assertTrue(anlayString.equalStr("helloa"));
+        assertTrue(anlayString.equalStr("hello"));
     }
 
     @Test
     public void replaceStr() throws Exception {
 
-        // assertEquals("cbcdd", anlayString.replaceStr("abcdd")); // 比较值即可
-        assertSame("cbcdd", anlayString.replaceStr("abcdd")); // 比较Object,说白了就是看地址是不是一样的
+        assertEquals("cbcdd", anlayString.replaceStr("abcdd")); // 比较值即可
+        // assertSame("cbcdd", anlayString.replaceStr("abcdd")); // 比较Object,说白了就是看地址是不是一样的
     }
 
     @Test
