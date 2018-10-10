@@ -3,8 +3,13 @@ package com.liu.zhibao.angrypandaunittext.androidtest;
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 
+import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runners.Parameterized;
+
+import java.util.Collection;
 
 import static org.junit.Assert.*;
 
@@ -31,8 +36,17 @@ public class PlayerTest {
     @Test
     public void soundPoolLoad() throws Exception {
 
-        mPlayer.soundPoolLoad(""/*"tone/conn.wav"*/);
+        mPlayer.soundPoolLoad("tone/conn.wav");
 
     }
 
+    @After
+    public void tearDown() throws Exception {
+
+    }
+
+    @AfterClass
+    public static void afterClass(){
+        System.out.println("单元测试结束");
+    }
 }
