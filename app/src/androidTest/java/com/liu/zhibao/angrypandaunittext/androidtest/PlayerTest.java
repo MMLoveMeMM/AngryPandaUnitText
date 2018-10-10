@@ -37,7 +37,15 @@ public class PlayerTest {
     public void soundPoolLoad() throws Exception {
 
         mPlayer.soundPoolLoad("tone/conn.wav");
-
+        /*
+        * 等待异步任务的声音播放完成,测试单元方法才能够结束
+        * 为了阻止单元测试程序结束,利用休眠阻止3s
+        * */
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @After
